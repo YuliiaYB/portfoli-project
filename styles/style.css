@@ -28,6 +28,10 @@ h2 {
   font-size: 64px;
 }
 
+h4 {
+  font-size: 48px;
+}
+
 p {
   font-family: var(--default-font-family);
   font-weight: normal;
@@ -88,18 +92,21 @@ nav li.active a {
   line-height: 1.5;
 }
 
-.content-container {
-  padding: 160px 20px;
-}
-
 .content-container h1 {
   font-size: 63px;
   line-height: 80px;
+  padding: 160px 20px;
 }
 
 .content-container h2 {
   font-size: 18px;
   font-family: var(--default-font-family);
+}
+
+.content-container p {
+  font-size: 16px;
+  font-family: var(--default-font-family);
+  text-align: left;
 }
 
 .content h3 {
@@ -119,12 +126,6 @@ nav li.active a {
 
 .content {
   margin: 30px;
-}
-
-.content-container p {
-  font-size: 16px;
-  font-family: var(--default-font-family);
-  text-align: left;
 }
 
 .btn-branding {
@@ -149,6 +150,53 @@ nav li.active a {
   padding: 120px 60px 0;
 }
 
+footer {
+  margin: 60px 0;
+}
+
+footer .contact-box {
+  background-color: var(--secondary-color);
+  padding: 30px 120px;
+  border-radius: 10px;
+}
+
+footer .contact-box p {
+  margin: 0;
+}
+
+footer div .circle {
+  background: var(--secondary-color);
+  border-radius: 50%;
+  height: 2em;
+  width: 2em;
+  position: relative;
+}
+
+footer .circle-icon {
+  color: var(--branding-color);
+  fill: currentColor;
+  height: 50%;
+  left: 50%;
+  position: absolute;
+  stroke: currentColor;
+  stroke-width: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+}
+
+footer .email-link {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+  text-align: center;
+  font-family: var(--default-font-family);
+}
+
+footer .email-link:hover {
+  color: var(--branding-color);
+}
+
 @media (max-width: 900px) {
   h1 {
     font-size: 44px;
@@ -171,38 +219,4 @@ nav li.active a {
     text-align: center;
     padding: 0;
   }
-}
-
-.page-bottom {
-  background-color: var(--secondary-color);
-  margin: 80px 200px;
-  padding: 40px 40px;
-  border-radius: 20px;
-  box-shadow: 1px 3px rgba(0, 0, 0, 0.25);
-}
-
-.page-bottom h2 {
-  font-size: 48px;
-  text-align: left;
-}
-
-.circle {
-  background: var(--secondary-color);
-  border-radius: 50%;
-  height: 2em;
-  width: 2em;
-  position: relative;
-}
-
-.circle-icon {
-  color: var(--branding-color);
-  fill: currentColor;
-  height: 50%;
-  left: 50%;
-  position: absolute;
-  stroke: currentColor;
-  stroke-width: 0;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 50%;
 }
