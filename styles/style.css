@@ -28,7 +28,7 @@ h2 {
   font-size: 64px;
 }
 
-h4 {
+h3 {
   font-size: 48px;
 }
 
@@ -92,10 +92,13 @@ nav li.active a {
   line-height: 1.5;
 }
 
+.content-container {
+  padding: 60px 20px;
+}
+
 .content-container h1 {
   font-size: 63px;
   line-height: 80px;
-  padding: 160px 20px;
 }
 
 .content-container h2 {
@@ -137,6 +140,11 @@ nav li.active a {
   padding: 15px 30px;
 }
 
+.btn-branding:hover {
+  color: var(--branding-color);
+  border-color: var(--branding-color);
+}
+
 .btn-branding-outline {
   color: var(--branding-color);
   border: 1px solid var(--branding-color);
@@ -144,6 +152,11 @@ nav li.active a {
   font-size: 18px;
   line-height: 27px;
   padding: 15px 30px;
+}
+
+.btn-branding-outline:hover {
+  color: white;
+  background-color: var(--branding-color);
 }
 
 .project-description {
@@ -218,5 +231,10 @@ footer .email-link:hover {
   .content-container {
     text-align: center;
     padding: 0;
+  }
+
+  .content h1 {
+    font-size: 40px;
+    line-height: 1.5;
   }
 }
